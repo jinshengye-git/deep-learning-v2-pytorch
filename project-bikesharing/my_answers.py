@@ -91,7 +91,7 @@ class NeuralNetwork(object):
         # Weight step (hidden to output)
         #delta_weights_h_o += output_error_term * hidden_outputs[:,None]
         delta_weights_h_o += error * hidden_outputs[:,None]
-        
+
         return delta_weights_i_h, delta_weights_h_o
     def update_weights(self, delta_weights_i_h, delta_weights_h_o, n_records):
         ''' Update weights on gradient descent step
@@ -127,7 +127,7 @@ class NeuralNetwork(object):
 #########################################################
 # Set your hyperparameters here
 ##########################################################
-iterations = 100
-learning_rate = 0.1
-hidden_nodes = 2
+iterations = 3000
+learning_rate = 1
+hidden_nodes = 10
 output_nodes = 1
