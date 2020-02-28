@@ -1,0 +1,3 @@
+[submodule "capsule_net_pytorch"]
+	path = capsule_net_pytorch
+	url = https://github.com/cezannec/capsule_net_pytorch.git
